@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.icon-field {
+  display: flex;
+}
+
+
+
+body {
+  background-color: #FCF1E9;
+  font-family: "Oxygen" , sans-serif;
+}
+
+#container {
+  position: relative;
+}
+
+#header-img {
+  width: 100px;
+  
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #403832;
+}
+
+#logo {
+ width: 65vw; 
+}
+
+@media (max-width: 650px) {
+  #logo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    
+  }
+}
+
+#email-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+}
+
+@media (max-width: 650px) {
+  #email-section {
+    margin-top: 220px;
+  }
+}
+
+#email-section > h2 {
+  margin-bottom: 20px;
+}
+
+
+#submit {
+  padding: 0 20px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: 600; 
+  text-transform: uppercase;
+  border-radius: 8px
+}
+
+#email-section input[type="email"] {
+  width: 100%;
+  min-width: 245px;
+  padding: 5px;
+}
+#email-section input[type="submit"] {
+  width: 100%;
+  max-width: 150px;
+  border: 0;
+  background-color: #F79A60;
+  margin: 15px 0;
+  
+}
+  
+
+
+#header {
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFE5D4;
+  padding: 0 20px;
+  position: fixed;
+  min-height: 75px;
+}
+
+@media (max-width: 600px) {
+  #header {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+#main {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+#email-section > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+
+
+#absolute-truth {
+  margin-top: 30px;
+  
+}
+
+#absolute-truth .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125px;
+  width: 20vw;
+  color: #F77829; 
+}
+
+
+
+#absolute-truth .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+
+
+
+
+@media (max-width: 650px) {
+  #absolute-truth .icon {
+    display: none;
+  }
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 35vw; 
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+#product-video {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#product-video > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+#price {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 10 px;
+}
+
+.product > .buy-head {
+  background-color: #ddd;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ul {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #ddd;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+#legendary {
+  font-style: italic;
+  font-weight: 600;
+  color: #55092B;
+  border-radius: 30px;
+  
+}
+
+#legendary > .buy-head {
+  background: linear-gradient(90deg, rgba(255,57,57,1) 0%, rgba(48,132,255,1) 25%, rgba(141,255,50,1) 50%, rgba(255,122,51,1) 75%, rgba(180,50,255,1) 100%);
+  font-style: italic;
+  color: #55092B;
+  font-weight: 600;
+  border-radius: 30px
+}
+
+#legendary > #btn-lgnd {
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, rgba(180,50,255,1) 0%, rgba(255,122,51,1) 25%, rgba(141,255,50,1) 50%, rgba(48,132,255,1) 75%, rgba(255,57,57,1) 100%);
+}
+
+
+@media (max-width: 800px) {
+  #price {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+#footer {
+  margin-top: 30px;
+  background-color:  #FFE5D4;
+  padding: 20px;
+}
+
+
+
+#footer > ul {
+  display: flex;
+  justify-content: center;
+}
+
+#footer > ul > li {
+  padding: 0 10px;
+}
